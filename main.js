@@ -1,0 +1,1 @@
+zana.innerHTML = "<i>Bonsoir la Guinée Equatoriale</i>"
