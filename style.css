@@ -33,6 +33,8 @@ form input{
     color: #00353f;
 }
 
+
+
 form button{
     width: 20%;
     height: 40px;
@@ -42,3 +44,30 @@ form button{
     border: none;
     border-radius: 4em;
 }
+
+ol{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+ol li{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 14px;
+    background-color: rgb(0, 0, 0, 0.1);
+    width: 700px;
+    align-items: center;
+    font-size: 2em;
+    height: 70px;
+    border-radius: 24px;
+    border: none;
+    margin-bottom: 24px;
+}
+
+ol li img{
+    width: 40px;
+}
+
