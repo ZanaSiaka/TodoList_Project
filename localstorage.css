@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+
+.conteneur{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, azure, skyblue);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 10px;
+}
+
+.liste{
+    width: 100%;
+    max-width: 740px;
+    background-color: white;
+    padding: 40px 30px 70px;
+    border-radius: 14px;
+}
+
+.liste h2{
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 25px;
+}
+
+.liste h2 img{
+    width: 50px;
+}
+
+.colonne-tache{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.colonne-tache input{
+    width: 70%;
+    margin-right: 2%;
+    height: 40px;
+    border-radius: 8px;
+    padding: 4px 4px 4px 14px;
+    border: 1px solid skyblue;
+    outline: none;
+}
+
+.colonne-tache button{
+    width: 25%;
+    border-radius: 8px;
+    border: none;
+    background-color: skyblue;
+    color: white;
+    font-size: 1.2em;
+    height: 40px;
+}

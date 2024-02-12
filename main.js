@@ -7,18 +7,11 @@ const btn = document.getElementById("btn")
 const autache = document.getElementById("autache")
 
 
-// if (valeurTache == ""){
-//     autache.style.display = "block"
-// }else{
-//     autache.style.display = "none"
-// }
-
-autache.style.display = (taches.innerHTML == '')? "block" : "none"
 
 
 
 window.addEventListener("load",recuperer())
-const imgdel = document.querySelectorAll(".Delete")
+const imgdel = document.querySelectorAll(".Delete") 
 
 for (let img of imgdel){
     img.addEventListener("click", function(){
@@ -59,23 +52,23 @@ form.addEventListener("submit", function(event){
 
     valeurTache.value = ""
 
-    localStorage.setItem("valeur", taches.innerHTML)
-
+    if (valeurTache == ""){
+        autache.style.display = "block"
+    }else{
+        autache.style.display = "none"
+    }
 
 })
 
 function supprimer(element){
     element.remove()
     localStorage.setItem("valeur", taches.innerHTML)
-        
-    autache.style.display = (taches.innerHTML == '')? "block" : "none"
-
 }
 
-// if (taches.innerHTML == ''){
-//     autache.style.display = "block"
-// }else{
-//     autache.style.display = "none"
-// }
+if (taches.innerHTML == ''){
+    autache.style.display = "block"
+}else{
+    autache.style.display = "none"
+}
 
 
