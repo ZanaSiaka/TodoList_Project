@@ -37,6 +37,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    margin-bottom: 30px;
 }
 
 .colonne-tache input{
@@ -57,4 +58,42 @@
     color: white;
     font-size: 1.2em;
     height: 40px;
+    cursor: pointer;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+}
+
+ul li{
+    list-style: none;
+    font-size: 1.1em;
+    width: 97%;
+    background-color: rgba(135, 206, 235, 0.2);
+    margin-bottom: 10px;
+    padding: 0 20px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul li span{
+    font-weight: 600;
+    font-family: Verdana, sans-serif;
+    height: 35px;
+    border-radius: 100%;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+ul li span:hover{
+    background-color: rgba(85, 85, 85, 0.3);
 }
