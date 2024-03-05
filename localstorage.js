@@ -18,10 +18,6 @@ form.addEventListener("submit", function(event){
         li.appendChild(span)
     }
 
-    if (input.value === ' '){
-        input.value = dad
-    }
-
 
     event.preventDefault();
     input.value = ''
@@ -40,7 +36,6 @@ conteneur.addEventListener("click", function(e){
 
 function todolist(){
     localStorage.setItem("tache", conteneur.innerHTML)
-    
 }
 
 function afficher(){
