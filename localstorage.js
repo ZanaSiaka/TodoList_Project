@@ -4,7 +4,6 @@ const form = document.getElementById("form");
 const input = document.getElementById("input-box");
 const btn = document.getElementById("btn");
 const conteneur = document.getElementById("conteneur-liste");
-let li = ''
 
 
 form.addEventListener("submit", function(event){
@@ -29,24 +28,19 @@ form.addEventListener("submit", function(event){
 conteneur.addEventListener("click", function(e){
     if(e.target.tagName === 'SPAN'){
         e.target.parentElement.remove()
-        localStorage.removeItem("tache")
         todolist()
         verifierTache()
     }
-    verifierTache()
 }, false)
 
 function todolist(){
-    let val  = ""
-    for(let i=0; i<li.innerText.length-1; i++){
-        val = val + li.innerText[i]
-    }
-    localStorage.setItem("tache", val)
+    localStorage.setItem("tache", conteneur.firstChild.innerText)
     console.log(li)
 }
 
 function afficher(){
-    conteneur.innerHTML = `<li> ${localStorage.getItem("tache")} <span>X</span></li>`
+    conteneur.innerHTML = localStorage.getItem("tache")
+
 }
 
 function verifierTache(){
