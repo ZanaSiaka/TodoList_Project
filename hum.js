@@ -4,7 +4,6 @@ const form = document.getElementById("form");
 const input = document.getElementById("input-box");
 const btn = document.getElementById("btn");
 const conteneur = document.getElementById("conteneur-liste");
-let li = ''
 
 
 form.addEventListener("submit", function(event){
@@ -52,10 +51,8 @@ function afficher(){
 function verifierTache(){
     const noTache = document.querySelector("p")
     if (!localStorage.getItem("tache") || localStorage.getItem("tache") === ''){
-        console.log('0')
         noTache.style.display = "flex"
     }else{
-        console.log('Zana')
         noTache.style.display = "none"
         console.log(localStorage.length)
     }
